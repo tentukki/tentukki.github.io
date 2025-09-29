@@ -1,22 +1,22 @@
-.title {
-    color: green;
-}
-
 body {
-    background: #000; 
-    color: #0f0; 
+    background: #000476; 
+    color: #d035e3; 
     font-family: monospace; 
-    padding: 20px; 
+    /*padding: 20px; */
 }
 
+/*
 pre { 
     white-space: pre-wrap; 
     font-size: 14px; 
 }
+*/
 
-.ascii-title{
-  display: flex;
-  justify-content: center; /* Горизонтальное центрирование */
-  align-items: center; /* Вертикальное центрирование */
-  min-height: 100vh; /* Высота viewport для центрирования по вертикали */
+.ascii-title {
+  text-align: center; /* Центрирует дочерние inline/block элементы */
+}
+.ascii-title-pre {
+  font-family: monospace;
+  display: inline-block;
+  text-align: left;
 }
