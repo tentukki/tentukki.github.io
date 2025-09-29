@@ -13,3 +13,10 @@ pre {
     white-space: pre-wrap; 
     font-size: 14px; 
 }
+
+.ascii-title{
+  display: flex;
+  justify-content: center; /* Горизонтальное центрирование */
+  align-items: center; /* Вертикальное центрирование */
+  min-height: 100vh; /* Высота viewport для центрирования по вертикали */
+}
