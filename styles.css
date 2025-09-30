@@ -20,3 +20,47 @@ pre {
   display: inline-block;
   text-align: left;
 }
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Полупрозрачный белый фон, ИЗМЕНИТЬ*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999; /* Выше всего остального */
+    transition: opacity 0.5s ease; /* Плавное исчезновение */
+}
+
+#preloader.hidden {
+    opacity: 0;
+    pointer-events: none; /* Чтобы не мешал кликам после скрытия */
+}
+
+/* Простая анимация спиннера */
+
+/*.loader {*/
+    /*border: 8px solid #f3f3f3;  Светлый бордер */
+    /*border-top: 8px solid #3498db;  Цвет акцента */
+    /*border-radius: 50%;*/
+    /*width: 60px;*/
+    /*height: 60px;*/
+/*}*/
+
+/*
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+*/
+
+/* Кастомизация: добавьте ваш логотип или текст */
+#preloader p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}

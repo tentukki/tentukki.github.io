@@ -7,6 +7,61 @@
         <script src="script.js"></script>
     </head>
     <body>
+        
+        <div id="preloader">
+        <div class="loader">
+            test
+            <script>
+        const frames = [
+            `
+             @@@@   
+           @      @ 
+          @        @
+          @        @
+           @      @ 
+             @@@@   
+            `,
+            `
+             @@@    
+           @@     @@
+          @         @
+          @         @
+           @@     @@
+             @@@    
+            `,
+            `
+              @@    
+            @     @ 
+           @       @
+           @       @
+            @     @ 
+              @@    
+            `,
+            `
+               @    
+             @   @  
+            @     @ 
+            @     @ 
+             @   @  
+               @    
+            `
+        ];  // Add more frames for smoother animation
+
+        let currentFrame = 0;
+        const asciiElement = document.getElementById('ascii-art');
+
+        function animate() {
+            asciiElement.textContent = frames[currentFrame];
+            currentFrame = (currentFrame + 1) % frames.length;
+        }
+
+        setInterval(animate, 200);  // Change frame every 200ms
+        animate();  // Initial render
+    </script>
+            </div> <!-- Здесь ваша анимация или изображение -->
+        <p>Loading...</p> <!-- Опционально: текст или ваш логотип -->
+        </div>
+        
         <div class="ascii-title">
         <pre class="ascii-title-pre">                                                                                                                      
          88 88             88                    88                88                                                 
@@ -61,52 +116,5 @@ a8"    `Y88 88 a8"    `Y88 88   88    ""     `Y8 88    a8"    `Y88 88P'    "8a a
     </script>
         </div>
         <pre id="ascii-art"></pre>
-    <script>
-        const frames = [
-            `
-             @@@@   
-           @      @ 
-          @        @
-          @        @
-           @      @ 
-             @@@@   
-            `,
-            `
-             @@@    
-           @@     @@
-          @         @
-          @         @
-           @@     @@
-             @@@    
-            `,
-            `
-              @@    
-            @     @ 
-           @       @
-           @       @
-            @     @ 
-              @@    
-            `,
-            `
-               @    
-             @   @  
-            @     @ 
-            @     @ 
-             @   @  
-               @    
-            `
-        ];  // Add more frames for smoother animation
-
-        let currentFrame = 0;
-        const asciiElement = document.getElementById('ascii-art');
-
-        function animate() {
-            asciiElement.textContent = frames[currentFrame];
-            currentFrame = (currentFrame + 1) % frames.length;
-        }
-
-        setInterval(animate, 200);  // Change frame every 200ms
-        animate();  // Initial render
-    </script>
     </body>
 </html>
