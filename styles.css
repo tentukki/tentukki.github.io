@@ -12,8 +12,6 @@ pre {
 }
 */
 
-.ascii-art
-
 .ascii-title {
   text-align: center; /* Центрирует дочерние inline/block элементы */
 }
@@ -45,9 +43,11 @@ pre {
 
 /* Простая анимация спиннера */
 
+/*
 .ascii-preloader {
 
 }
+*/
 
 /*
 @keyframes spin {
