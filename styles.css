@@ -3,6 +3,7 @@ body {
     color: #d035e3; 
     font-family: monospace; 
     /*padding: 20px; */
+    margin: 0;
 }
 
 /*
@@ -11,6 +12,32 @@ pre {
     font-size: 14px; 
 }
 */
+
+.container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+.sidebar {
+            width: 250px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+ .main-content {
+            flex-grow: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+@media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+            }
+        }
 
 .ascii-title {
   text-align: center; /* Центрирует дочерние inline/block элементы */
@@ -61,4 +88,8 @@ pre {
     margin-top: 20px;
     font-size: 20px;
     color: #a928a8;
+}
+
+.ascii-sigilism {
+    font-size: 6px;
 }
