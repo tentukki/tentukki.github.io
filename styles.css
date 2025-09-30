@@ -12,6 +12,8 @@ pre {
 }
 */
 
+.ascii-art
+
 .ascii-title {
   text-align: center; /* Центрирует дочерние inline/block элементы */
 }
@@ -43,13 +45,9 @@ pre {
 
 /* Простая анимация спиннера */
 
-/*.loader {*/
-    /*border: 8px solid #f3f3f3;  Светлый бордер */
-    /*border-top: 8px solid #3498db;  Цвет акцента */
-    /*border-radius: 50%;*/
-    /*width: 60px;*/
-    /*height: 60px;*/
-/*}*/
+.ascii-preloader {
+
+}
 
 /*
 @keyframes spin {
@@ -61,6 +59,6 @@ pre {
 /* Кастомизация: добавьте ваш логотип или текст */
 #preloader p {
     margin-top: 20px;
-    font-size: 18px;
-    color: #333;
+    font-size: 20px;
+    color: #a928a8;
 }
