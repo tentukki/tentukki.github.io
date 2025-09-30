@@ -22,11 +22,12 @@ pre {
             width: 250px;
             padding: 20px;
             box-sizing: border-box;
+    overflow-x: hidden;
         }
 
  .main-content {
             flex-grow: 1;
-            padding: 20px;
+            /*padding: 15px;*/
             box-sizing: border-box;
         }
 
